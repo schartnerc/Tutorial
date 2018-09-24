@@ -1,0 +1,9 @@
+{% extends 'check/base.html' %}
+{% block content %}
+    <div class="room_index">
+       {% for room in rooms_to_check %}
+            <li><a href="{% url 'check:form' room.room_id %}" >{{ room.room_name }}</a>
+            </li>
+            {% endfor %}
+    </div>
+{% endblock %}

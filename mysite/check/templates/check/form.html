@@ -1,0 +1,11 @@
+{% extends 'check/base.html' %}
+{% block content %}
+    <div>
+       <a>Test {{ questions }}</a>
+        {% for question in questions %}
+            <li>
+                <a>{{ question }}</a>
+            </li>
+            {% endfor %}
+    </div>
+{% endblock %}
